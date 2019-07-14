@@ -9,10 +9,6 @@ use think\Controller;
 
 class BaseController extends Controller
 {
-    /**
-     * @throws \app\lib\exception\ForbiddenException
-     * @throws \app\lib\exception\TokenException
-     */
     protected function checkPrimaryScope()
     {
         TokenService::needPrimaryScope();
